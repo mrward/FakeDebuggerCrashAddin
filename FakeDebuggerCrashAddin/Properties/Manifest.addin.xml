@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Runtime>
+	</Runtime>
+    <Extension path="/MonoDevelop/Ide/Commands">
+		<Category _name="Test" id="TestDebuggerCrash">
+			<Command
+				id="TestDebuggerCrash.GenerateFakeDebugSessionCrash"
+				_description="Fakes a debug session crash"
+				_label="Generate Fake Debug Session Crash"
+				defaultHandler="FakeDebuggerCrashAddin.GenerateFakeDebugSessionCrashHandler" />
+		</Category>
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/MainMenu/Run">
+			<CommandItem
+				id="TestDebuggerCrash.GenerateFakeDebugSessionCrash" />
+	</Extension>
+</ExtensionModel>
